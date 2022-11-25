@@ -8,7 +8,7 @@ class SomeTests(unittest.TestCase):
         pass # runs after all test cases
 
     def test_case_1_one_equals_one(self):
-        self.assertEqual(1, 1)
+        self.assertEqual(1, 2)
         
     def test_case_2_None_is_None(self):
         '''This comment will appear in the test output'''
