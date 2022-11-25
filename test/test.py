@@ -1,4 +1,5 @@
 import unittest
+import sys
 class SomeTests(unittest.TestCase):
 
     def setUp(self):
@@ -24,4 +25,5 @@ class SomeTests(unittest.TestCase):
 if __name__ == '__main__':
     # unitest.main()
     suite = unittest.TestLoader().loadTestsFromTestCase(SomeTests)
-    unittest.TextTestRunner(verbosity=2).run(suite)
+    ret = not unittest.TextTestRunner(verbosity=2).run(suite).wasSuccessful()
+    sys.exit(ret)
