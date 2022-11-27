@@ -4,8 +4,8 @@ class User:
         self.favorite_topics = []
         self.articles_history = []
 
-    def add_topic_to_favorites(self, topic):
-        self.favorite_topics.append(topic)
+    def set_favorite_topics(self, topics):
+        self.favorite_topics = topics
     
     def add_article_to_history(self, article):
         self.articles_history.append(article)
