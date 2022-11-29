@@ -1,6 +1,5 @@
 class User:
 
-
     def __init__(self):
         self.favorite_topics = []
         self.articles_history = []
