@@ -22,19 +22,22 @@ if __name__ == "__main__":
         article = get_random(articles)
 
         # Ask the user if they want read article.
-        user_input = input("Do you want to read {} from topic {}? [yes/other] ".format(article.get_title(), article.get_topic()))
+        user_input = input("Do you want to read \"{}\" from topic {}? [yes/other is no] ".format(article.get_title(), article.get_topic()))
 
         if user_input == "yes":
             # Open article.
             system("open {}".format(article.url))
             user.add_article_to_history(article)
 
+            if len(articles) == 0:
+                break
+
             # Ask user if they want to read another article.
-            user_input = input("Read more? {} articles remaining [yes/other] ".format(len(articles)))
+            user_input = input("Read more? {} articles remaining [yes/other is no] ".format(len(articles)))
             if user_input != "yes":
                 break
 
             print("Looking for another article...")
 
-    print("Total articles read: {}".format(len(user.get_articles_history)))
+    print("Total articles read: {}".format(len(user.get_articles_history())))
     print("end.")
