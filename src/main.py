@@ -11,6 +11,7 @@ if __name__ == "__main__":
 
     # Step 2: Create set of articles, based on favorite topics.
     articles = set()
+    
     for topic in user.get_favorite_topics():
         articles.update(get_all_articles(topic))
 
