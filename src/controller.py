@@ -4,8 +4,8 @@ def get_user_input_topics():
     return []
 
 def get_all_articles(topic):
-    # Fetch all articles for topic (web scrape)
-    return []
+    # Fetch all articles for topic (web scrape), returns a set
+    return None
 
 def get_random(articles):
     # Select a random article from set and remove it from the set
