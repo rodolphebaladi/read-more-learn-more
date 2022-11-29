@@ -2,10 +2,10 @@ import requests
 from bs4 import BeautifulSoup
 from topics import Topics
 from article import Article
+from random import sample
 
 # List topics enumeration to user and ask to add to favorites
 def get_user_input_topics():
-    # TODO: make sure two topics are not repeated
     exists_input = True
     list_of_topics = []
     prompt_topic1 = (
@@ -35,14 +35,19 @@ def get_user_input_topics():
         # Validate input
         if (not topic.isnumeric()):
             print("\nPlease provide a number!\n") 
+
         elif (int(topic) < 1 or int(topic) > 13):
             print("\nInvalid number, please provide a number between 1 and 13!\n")
+        
+        elif int(topic) in list_of_topics:
+            print("\nTopic already in list!\n")
+
         else:
             list_of_topics.append(int(topic))
-            more_input = input("Would you like to provide another topic? [yes/other is no] ")
-        
-            if (more_input != 'yes'):
-                exists_input = False
+
+        more_input = input("Would you like to provide another topic? [yes/other is no] ")
+        if (more_input != 'yes'):
+            exists_input = False
         
     return list_of_topics
 
@@ -82,4 +87,6 @@ def get_all_articles(topic):
 
 def get_random(articles):
     # Select a random article from set and remove it from the set
-    return articles.pop()
+    random_article = sample(articles, 1)[0]
+    articles.remove(random_article)
+    return random_article
