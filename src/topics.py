@@ -1,6 +1,7 @@
 from enum import Enum
 
 class Topics(Enum):
+
     ENTERTAINMENT_AND_POP_CULTURE = 1
     GEOGRAPHY_AND_TRAVEL = 2
     HEALTH_AND_MEDICINE = 3
