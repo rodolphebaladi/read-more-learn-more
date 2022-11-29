@@ -1,16 +1,22 @@
-'''Docstrings'''
-import requests
-from bs4 import BeautifulSoup
+class Article:
 
-response = requests.get(
-	url="https://www.britannica.com/browse/Entertainment-Pop-Culture", timeout='10s'
-)
-soup = BeautifulSoup(response.content, 'html.parser')
-for a in soup.find_all('a', href=True):
-    isStory = a['href'].startswith('/story/') or a['href'].startswith('/list/')
-    if isStory:
-        title = a.text
-        if title is not None:
-            # if title.contains(' '):
-            #     print ('nothing')
-            print (title.strip())
+    def __init__(self, title, topic, url):
+        self.title = title
+        self.topic = topic
+        self.url = url
+
+    def get_title(self):
+        return self.title
+
+    def get_topic(self):
+        return self.topic
+
+    def get_url(self):
+        return self.url
+
+    def __eq__(self, other):
+        return (type(self) == type(other) and self.title == other.title and self.topic == other.topic and self.url == other.url)
+
+    def __hash__(self):
+        return hash(tuple(sorted(self.__dict__.items())))
+
