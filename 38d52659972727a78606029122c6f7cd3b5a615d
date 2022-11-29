@@ -1,0 +1,44 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "2a1c79af_77abff7a",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1020556
+      },
+      "writtenOn": "2022-11-29T01:34:50Z",
+      "side": 1,
+      "message": "Great edits, no fixes needed.",
+      "revId": "38d52659972727a78606029122c6f7cd3b5a615d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": true,
+      "key": {
+        "uuid": "6a862e9e_664b4367",
+        "filename": "src/main.py",
+        "patchSetId": 1
+      },
+      "lineNbr": 5,
+      "author": {
+        "id": 1020556
+      },
+      "writtenOn": "2022-11-29T01:34:50Z",
+      "side": 1,
+      "message": "Really good structure, thanks a lot!",
+      "range": {
+        "startLine": 5,
+        "startChar": 11,
+        "endLine": 5,
+        "endChar": 12
+      },
+      "revId": "38d52659972727a78606029122c6f7cd3b5a615d",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
