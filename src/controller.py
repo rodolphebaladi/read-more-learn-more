@@ -1,4 +1,3 @@
-
 def get_user_input_topics():
     # List topics enumeration to user and ask to add to favorites
     return []
