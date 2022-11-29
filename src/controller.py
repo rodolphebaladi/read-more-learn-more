@@ -62,7 +62,7 @@ def get_all_articles(topic):
     str3 = str2.replace("and ", "")
     str4 = str3.title()
     endpoint = str4.replace(" ", "-")
-    print (endpoint)
+    print(endpoint)
 
     # Fetch all articles for topic (web scrape), returns a set
 
@@ -78,7 +78,8 @@ def get_all_articles(topic):
             if title is not None:
                 title = title.strip()
                 if (title != "" and title != "Lists"):
-                    url = None # TODO: scrape the article url
+                    # TODO: scrape the article url
+                    url = None 
                     article = Article(title, topic, url)
                     articles.add(article)
     
