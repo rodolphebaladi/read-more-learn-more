@@ -59,8 +59,8 @@ def get_all_articles(topic):
     str0 = str(topic_string).lower()
     str1 = str0[7:]
     str2 = str1.replace("_", " ")
-    str3 = str2.replace("and ", "")
-    str4 = str3.title()
+    str3 = str2.title()
+    str4 = str3.replace("And ", "")
     endpoint = str4.replace(" ", "-")
     print(endpoint)
 
@@ -74,12 +74,13 @@ def get_all_articles(topic):
     for a in soup.find_all('a', href=True):
         is_story = a['href'].startswith('/story/') or a['href'].startswith('/list/')
         if is_story:
+            url = a['href']
             title = a.text
             if title is not None:
                 title = title.strip()
                 if (title != "" and title != "Lists"):
-                    # TODO: scrape the article url
-                    url = None 
+                    topic = str3
+                    url = "https://www.britannica.com/" + url
                     article = Article(title, topic, url)
                     articles.add(article)
     
