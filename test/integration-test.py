@@ -9,3 +9,5 @@ class IntegrationTests(unittest.TestCase):
 
     def test_1(self):
         self.assertEqual(1, 1)
+    
+    #TODO: a few integration tests (2-3) that use multiple classes and functions
