@@ -16,6 +16,23 @@
       "message": "Thanks!",
       "revId": "0690b2c6a380b18389caf0130051e5373cdd17d8",
       "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    },
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "d8a6c4aa_0a44a7bf",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1020553
+      },
+      "writtenOn": "2022-12-02T03:29:21Z",
+      "side": 1,
+      "message": "Nice styling of code! Thanks for following guidelines",
+      "revId": "0690b2c6a380b18389caf0130051e5373cdd17d8",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
     }
   ]
 }
