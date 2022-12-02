@@ -15,7 +15,7 @@ Run application unit tests:
 make testing
 ```
 
-Push committed changes and request code review on GerritHub:
+Push committed changes and request code review on GerritHub.io:
 ```
 git push origin HEAD:refs/for/<branch_name>
 ```
