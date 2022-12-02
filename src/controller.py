@@ -1,8 +1,7 @@
 import requests
 from bs4 import BeautifulSoup
-from topics import Topics
-from article import Article
 from random import sample
+import warnings
 
 # List topics enumeration to user and ask to add to favorites
 def get_user_input_topics():
@@ -52,7 +51,14 @@ def get_user_input_topics():
     return list_of_topics
 
 
-def get_all_articles(topic):
+def get_all_articles(topic, ext=False):
+    if ext:
+        from src.topics import Topics
+        from src.article import Article
+    else:
+        from topics import Topics
+        from article import Article        
+
     articles = set()
 
     topic_string = Topics(topic)
@@ -88,6 +94,7 @@ def get_all_articles(topic):
 
 
 def get_random(articles):
+    warnings.filterwarnings("ignore", category=DeprecationWarning) 
     # Select a random article from set and remove it from the set
     random_article = sample(articles, 1)[0]
     articles.remove(random_article)
