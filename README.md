@@ -1,8 +1,13 @@
 # read-more-learn-more
 
-Clone repository with Gerrit commit-msg hook script: 
+Clone Git repository used for implementation and test (requires *GITHUB_USERNAME*):
 ```
-git clone "ssh://rodolphebaladi@review.gerrithub.io:29418/rodolphebaladi/read-more-learn-more" && scp -p -P 29418 rodolphebaladi@review.gerrithub.io:hooks/commit-msg "read-more-learn-more/.git/hooks/"
+git clone git@github.com:<GITHUB_USERNAME>/read-more-learn-more.git
+```
+
+Clone Gerrit repository used for code reviews with Gerrit commit-msg hook script (requires *GERRITHUB_USERNAME*): 
+```
+git clone "ssh://<GERRITHUB_USERNAME>@review.gerrithub.io:29418/rodolphebaladi/read-more-learn-more" && scp -p -P 29418 <GERRITHUB_USERNAME>@review.gerrithub.io:hooks/commit-msg "read-more-learn-more/.git/hooks/"
 ```
 
 Compile and run the application:
