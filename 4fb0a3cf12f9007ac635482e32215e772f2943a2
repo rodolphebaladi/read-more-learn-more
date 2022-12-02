@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "23304b8e_991df62f",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1020553
+      },
+      "writtenOn": "2022-12-02T03:31:31Z",
+      "side": 1,
+      "message": "Looks good. Thanks for using BeautifulSoup, as we discussed in our design meeting!",
+      "revId": "4fb0a3cf12f9007ac635482e32215e772f2943a2",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
