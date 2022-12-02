@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "1763f793_3cdbb667",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1020556
+      },
+      "writtenOn": "2022-12-02T03:31:51Z",
+      "side": 1,
+      "message": "Great style as mentioned in CI/CD discussion",
+      "revId": "8f4346a07a9f937a4cdaf44fe9ea046f298a2b8a",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
