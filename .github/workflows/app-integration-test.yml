@@ -8,7 +8,7 @@ on:
 
 jobs:
   unittest:
-    name: Run application unit tests
+    name: Run application integration tests
     runs-on: ubuntu-latest
 
     steps:
@@ -18,5 +18,5 @@ jobs:
       - name: Install requirements
         run: pip install -r requirements.txt
         
-      - name: Run unit tests
+      - name: Run integration tests
         run: make integration-tests
