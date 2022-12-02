@@ -1,8 +1,8 @@
 run:
 	python3 src/main.py
 
-testing:
-	python3 test/test.py
+unit tests:
+	python3 -m unittest test/unit-test.py -v
 
 #setup: requirements.txt
 #    pip install -r requirements.txt

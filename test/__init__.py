@@ -1,0 +1,1 @@
+# Make test package look like library so it can be imported in the Makefile to trigger tests
