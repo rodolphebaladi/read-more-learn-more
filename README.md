@@ -30,6 +30,11 @@ Run application integration tests:
 make integration-tests
 ```
 
+Run application performance tests:
+```
+make performance-tests
+```
+
 Push committed changes and request code review on GerritHub:
 ```
 git push origin HEAD:refs/for/<branch_name>
