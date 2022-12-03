@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "b0ce564f_d169d2b4",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1020553
+      },
+      "writtenOn": "2022-12-03T21:07:27Z",
+      "side": 1,
+      "message": "Looks good, thanks for updating the makefile with the command!",
+      "revId": "096e5e7656b469d6e652122434fdb512682994e5",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
