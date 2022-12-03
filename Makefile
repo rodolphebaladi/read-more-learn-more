@@ -7,9 +7,6 @@ unit-tests:
 integration-tests:
 	python3 -m unittest test/integration-test.py -v
 
-performance-test:
-	python3 -m unittest test/performance-test.py
-
 #setup: requirements.txt
 #    pip install -r requirements.txt
 
