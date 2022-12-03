@@ -1,0 +1,21 @@
+{
+  "comments": [
+    {
+      "unresolved": false,
+      "key": {
+        "uuid": "21b0cb71_f688b169",
+        "filename": "/PATCHSET_LEVEL",
+        "patchSetId": 1
+      },
+      "lineNbr": 0,
+      "author": {
+        "id": 1020553
+      },
+      "writtenOn": "2022-12-03T20:28:00Z",
+      "side": 1,
+      "message": "Thank you for achieving 100% coverage, as we planned",
+      "revId": "35e8697c26c9cee06987f2d5c0995fbd7d695dec",
+      "serverId": "d5d70762-12d0-45a1-890d-524b12d3f735"
+    }
+  ]
+}
