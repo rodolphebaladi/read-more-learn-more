@@ -77,4 +77,18 @@ class UnitTests(unittest.TestCase):
         self.assertIn(random_result, backup)
         self.assertNotIn(random_result, test_set)
 
-    #TODO: 2 tests for get_all_articles(topic)
+    def test_get_all_articles_valid(self):
+        articles = get_all_articles(1, ext=True)
+        correct_article = Article("9 Things You Didn’t Know Were Named After People", "Entertainment And Pop Culture", 
+        "https://britannica.com/story/9-things-you-didnt-know-were-named-after-people")
+        article = list(articles)[0]
+        self.assertEqual(article.get_topic(), correct_article.get_topic())
+
+    def test_get_all_articles_invalid(self):
+        articles = get_all_articles(0, ext=True)
+        self.assertIsNone(articles)
+
+    def test_get_all_articles_invalid_2(self):
+        articles = get_all_articles(13, ext=True)
+        self.assertIsNone(articles)
+        

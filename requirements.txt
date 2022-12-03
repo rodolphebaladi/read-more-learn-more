@@ -29,3 +29,4 @@ trove_classifiers==2022.10.19
 unicodedata2==15.0.0
 urllib3_secure_extra==0.1.0
 beautifulsoup4==4.11.1
+validators==0.20.0

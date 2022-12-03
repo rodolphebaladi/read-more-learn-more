@@ -61,6 +61,8 @@ def get_all_articles(topic, ext=False):
 
     articles = set()
 
+    if topic <=0 or topic > 12:
+        return None
     topic_string = Topics(topic)
     str0 = str(topic_string).lower()
     str1 = str0[7:]
@@ -86,7 +88,7 @@ def get_all_articles(topic, ext=False):
                 title = title.strip()
                 if (title != "" and title != "Lists"):
                     topic = str3
-                    url = "https://www.britannica.com/" + url
+                    url = "https://www.britannica.com" + url
                     article = Article(title, topic, url)
                     articles.add(article)
     
