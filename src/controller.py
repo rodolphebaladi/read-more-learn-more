@@ -61,7 +61,7 @@ def get_all_articles(topic, ext=False):
 
     articles = set()
 
-    if topic <=0 or topic > 12:
+    if topic <= 0 or topic > 12:
         return None
     topic_string = Topics(topic)
     str0 = str(topic_string).lower()
