@@ -10,6 +10,11 @@ Clone Gerrit repository used for code reviews with Gerrit commit-msg hook script
 git clone "ssh://<GERRITHUB_USERNAME>@review.gerrithub.io:29418/rodolphebaladi/read-more-learn-more" && scp -p -P 29418 <GERRITHUB_USERNAME>@review.gerrithub.io:hooks/commit-msg "read-more-learn-more/.git/hooks/"
 ```
 
+Install application dependencies:
+```
+make setup
+```
+
 Compile and run the application:
 ```
 make
@@ -17,11 +22,15 @@ make
 
 Run application unit tests:
 ```
-make testing
+make unit-tests
+```
+
+Run application integration tests:
+```
+make integration-tests
 ```
 
 Push committed changes and request code review on GerritHub:
 ```
 git push origin HEAD:refs/for/<branch_name>
 ```
-
