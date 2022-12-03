@@ -7,7 +7,6 @@ unit-tests:
 integration-tests:
 	python3 -m unittest test/integration-test.py -v
 
-
 setup: requirements.txt
 	pip install -r requirements.txt
 
